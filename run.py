@@ -40,7 +40,7 @@ def scraping():
         {"strong": True, "content": "this text is bold"},
         {"strong": False, "content": "this is not bold"},
     ]
-    return render_template("scraping.html", data=data)
+    return render_template("scraping.html", table=data)
 
 @app.route("/css-selectors")
 def css_selectors():
